@@ -5,4 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-	return "hello world"
+	return "<html><a href='http://gph.is/2w17nf7'/></html>"
+
+@app.route('/scores')
+def scores():
+	return "Dorville - 14, Dan - 8, Marlo - 7, Matt - 1, Achintya - 1"
